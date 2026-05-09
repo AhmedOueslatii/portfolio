@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pad: clamp(1.5rem, 5vw, 5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fafaf8;
+  color: #0d0d0d;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section-pad {
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+}
